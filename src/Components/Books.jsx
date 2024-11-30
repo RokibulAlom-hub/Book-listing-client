@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const Books = ({ aBook }) => {
+const Books = ({ aBook,allbooks,setAllbooks }) => {
     console.log(aBook);
     const { _id, name, author, category, price, photo } = aBook;
     const handleDelete = _id => {
@@ -11,6 +11,8 @@ const Books = ({ aBook }) => {
         .then(data => {
             
             alert('succeesfully deleted')
+            const remaining = allbooks.filter(book => book._id !== _id);
+            setAllbooks(remaining)
         }
         )
     }
