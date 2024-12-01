@@ -34,6 +34,7 @@ const Navbar = () => {
                         <Link to='/Addbooks'>Addbooks</Link>
                         <Link to='/Register'>Register</Link>
                         <Link to='/Login'>Login</Link>
+                        <Link to='/Users'>Users</Link>
                     </ul>
                 </div>
                 <div className="navbar-end">
