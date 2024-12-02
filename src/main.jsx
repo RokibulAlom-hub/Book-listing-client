@@ -23,7 +23,7 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home></Home>,
-        loader: () => fetch('http://localhost:5000/books')
+        loader: () => fetch('https://books-list-server.vercel.app/books')
 
       },
       {
@@ -33,7 +33,7 @@ const router = createBrowserRouter([
       {
         path: '/update/:id',
         element: <Update></Update>,
-        loader: ({ params }) => fetch(`http://localhost:5000/books/${params.id}`)
+        loader: ({ params }) => fetch(`https://books-list-server.vercel.app/books/${params.id}`)
 
       },
       {
@@ -47,12 +47,12 @@ const router = createBrowserRouter([
       {
         path: '/Users',
         element: <Users></Users>,
-        loader:() => fetch('http://localhost:5000/users')
+        loader:() => fetch('https://books-list-server.vercel.app/users')
       },
       {
         path: '/UpdateUser/:id',
         element: <UpdateUser></UpdateUser>,
-        loader:({params}) => fetch(`http://localhost:5000/users/${params.id}`)
+        loader:({params}) => fetch(`https://books-list-server.vercel.app/users/${params.id}`)
       },
     ]
   },

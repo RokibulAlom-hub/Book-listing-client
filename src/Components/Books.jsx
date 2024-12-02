@@ -4,7 +4,7 @@ const Books = ({ aBook,allbooks,setAllbooks }) => {
     console.log(aBook);
     const { _id, name, author, category, price, photo } = aBook;
     const handleDelete = _id => {
-        fetch(`http://localhost:5000/books/${_id}`, {
+        fetch(`https://books-list-server.vercel.app/books/${_id}`, {
             method:'DELETE'
         })
         .then(res => res.json())

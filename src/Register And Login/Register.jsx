@@ -14,7 +14,7 @@ const Register = () => {
             console.log("user created at firebase",result.user);
             alert('user created successfully')
             const newUser ={email,name,photo}
-            fetch('http://localhost:5000/users',{
+            fetch('https://books-list-server.vercel.app/users',{
                 method: "POST",
                 headers:{
                     'content-type': 'application/json'

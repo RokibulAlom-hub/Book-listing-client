@@ -14,7 +14,7 @@ const Addbooks = () => {
         const newBooks = { name, author,category, price, photo }
         console.log(newBooks)
 
-        fetch('http://localhost:5000/books',{
+        fetch('https://books-list-server.vercel.app/books',{
             method:'POST',
             headers:{
                 "content-type" : "application/json"

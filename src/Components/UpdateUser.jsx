@@ -20,7 +20,7 @@ const UpdateUser = () => {
             updateUserData(user,{displayName: name, photoURL: photoURL})
             .then(() => {
                 setUser({displayName:name, photoURL: photoURL, ...user})
-               fetch(`http://localhost:5000/users/${_id}`,{
+               fetch(`https://books-list-server.vercel.app/users/${_id}`,{
                 method:"PUT",
                 headers:{
                     'content-type' : 'application/json'
