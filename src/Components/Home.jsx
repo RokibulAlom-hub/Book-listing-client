@@ -9,7 +9,7 @@ const Home = () => {
     
     return (
         <div>
-            <h2 className="text-2xl font-bold">{loaderBooks.length}</h2>
+            <h2 className="text-2xl text-center text-red-700 font-bold">{loaderBooks.length}</h2>
             <div  className="grid grid-cols-2 gap-2">
             {
                 allbooks.map(aBook => <Books
